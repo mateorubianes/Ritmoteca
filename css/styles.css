@@ -1,0 +1,361 @@
+/* CONDICIONES GENERALES */
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{   
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #ebebeb;
+}
+
+/* HEADER (titulo y menu) */
+.titulo
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.titulo img
+{
+    position: absolute;
+    left: 18%;
+    width: 4rem;
+    height: 4rem;
+}
+.titulo h1
+{
+    width: 100%;
+    text-align: center; 
+}
+.header
+{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    background-color: #db222a;
+    color: white;
+}
+.header nav
+{
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+.menu
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: #2a2a2a;
+    height: 2rem;
+}
+.menu li
+{
+    display: flex;
+    align-items: center;
+}
+.menu a
+{
+    color: white;
+    text-decoration: none;
+    
+    font-size: 200;
+    padding: 10px;
+}
+/* MediaQuerie HEADER */
+@media (min-width: 768px)
+{
+    .header
+    {
+        flex-direction: row;
+        font-size: large;
+        align-items: center;
+        height: 5rem;
+    }
+    .titulo
+    {
+        padding: auto;
+        width: 35%;
+    }
+    .titulo img
+    {
+        position: static;
+        width: 5rem;
+        height: 5rem;
+        padding-left: 0px;
+    }
+    .nav
+    {
+        width: 65%;
+    }
+    .menu 
+    {
+        padding: 25px 0px;
+    }
+
+}
+
+/*IMGEN Y SLOGAN*/
+.slogan h1
+{
+    position: absolute;
+    top: 90px; 
+    color: white;
+}
+.slogan img
+{
+    width: 100%;
+}
+@media (min-width: 768px)
+{
+    .slogan h1
+{
+    text-align: start;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+}
+
+/* SECCIÓN PRINCIPAL */
+main h1
+{
+    margin: 1rem;
+    text-align: center;
+    font-size: x-large;
+}
+.articulo1 , .articulo2, .articulo3
+{
+    display: grid;
+    grid-template-areas: 
+    "img" "img" "img"
+    "img" "img" "img"
+    "h2" "h2" "h2"
+    "p" "p" "p"   ; 
+    justify-items: center;
+    background-color: #db222a;
+    color: white;
+}
+.articulo2
+{
+    background-color: #2a2a2a;
+}
+.articulo1 h2, .articulo2 h2, .articulo3 h2
+{
+    grid-area: h2;
+    text-align: center;
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+}
+.articulo1 p, .articulo2 p, .articulo3 p
+{
+    text-align: center;
+    grid-area: p;
+    margin: 1rem;
+    font-size: 1rem;
+}
+.articulo1 img, .articulo2 img, .articulo3 img
+{
+    grid-area: img;
+    width: 60%;
+    background-color: #ebebeb;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 30px 0px 10px 0px;
+}
+
+@media (min-width: 1024px)
+{
+    .articulo1 , .articulo2, .articulo3
+    {
+        grid-template-columns: 2fr 3fr ;
+        align-items: center;
+        margin: 3rem;
+        padding: 2rem;
+        border-radius: 10px;
+    } 
+    .articulo1 img, .articulo2 img, .articulo3 img
+    {
+        width: 50%;
+        margin: auto;
+    }
+    .articulo2
+    {
+        grid-template-columns: 3fr 2fr ;
+        grid-template-areas:
+        "h2 img"
+        "p img"
+        "p img";
+    }
+    /* .articulo1 div, .articulo2 div, .articulo3 div
+    {
+
+    } */
+}
+@media (min-width: 1400px)
+{
+    .articulo1 h2, .articulo2 h2, .articulo3 h2
+{
+
+    font-size: 3rem;
+}
+.articulo1 p, .articulo2 p, .articulo3 p
+{
+
+    font-size: 2rem;
+}
+}
+
+/*HISTORIAS*/
+.historias h2
+{
+    margin: 3rem 3rem 0rem 3rem;
+    text-align: center;
+}
+.historias h4
+{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.historias ol
+{
+    margin: 0rem 6rem 6rem;
+    padding: 2rem;
+    border-radius: 15px;
+    color: white;
+    list-style: none;
+    background-color: #db222a;
+}
+.historias a
+{
+    color: #2a2a2a;
+}
+
+/* BIOGRAFIAS */
+.biografias h2
+{
+    grid-area: h2;
+    margin: 2rem auto 0rem auto;
+    text-align: center;
+}
+.biografias h4
+{
+    grid-area: h4;
+    margin-bottom: auto;
+    text-align: center;
+}
+.biografias ul
+{
+    text-align: center;
+    /* margin: 1rem 5rem 5rem 5rem; */
+    background-color: #2a2a2a;
+}
+.ul1
+{
+    margin: 1rem 5rem 5rem 5rem;
+}
+.ul2
+{
+    margin: 1rem 5rem 5rem 5rem;
+}
+.biografias li
+{
+    font-size: 2rem;
+    padding: 1rem;
+    border: 1px solid #ebebeb;
+    list-style: none;
+}
+.biografias a
+{
+    text-decoration: none;
+    color: #ebebeb;
+}
+.ul1
+{
+    grid-area: ul1;
+}
+.ul2
+{
+    grid-area: ul2;
+}
+@media (min-width: 1300px)
+{
+    .biografias 
+    {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 30px auto;
+        grid-template-areas: 
+        "h2 h2"
+        "h4 h4"
+        "ul1 ul2";
+    }
+    .ul1
+    {
+        margin: 1rem 1rem 5rem 5rem;
+    }
+    .ul2
+    {
+        margin: 1rem 1rem 5rem 5rem;
+    }
+}
+
+/*PLAYLISTS*/
+.playlist h2
+{
+    text-align: center;
+    margin: 2rem 15rem;
+    background-color: #2a2a2a;
+    color: #ebebeb;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.playlist 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FORM*/
+.form
+{
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+}
+
+/*FOOTER*/
+.footer
+{
+    display: flex;
+    background-color: #2a2a2a;
+    align-items: center;
+    padding: 0.5rem;
+}
+.redes
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.redes img
+{
+    height: 3rem;
+    margin: 0rem 0.5rem;
+}
+.logo img
+{
+    position: relative;
+    bottom: 1rem;
+    height: 4rem;
+}
+.footer h3
+{
+    color: white;
+    
+}
