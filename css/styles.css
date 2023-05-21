@@ -47,7 +47,7 @@ body
 .menu
 {
     margin: 0;
-    padding: 12px;
+    padding: 6px;
     display: flex;
     justify-content: space-around;
     background-color: #2a2a2a;
@@ -210,6 +210,14 @@ main h1
         "p img"
         "p img";
     }
+    .articulo1
+    {
+        margin-top: 0px;
+    }
+    .articulo3
+    {
+        margin-bottom: 0px;
+    }
 }
 @media (min-width: 1400px)
 {
@@ -230,6 +238,10 @@ main h1
 }
 
 /*HISTORIAS*/
+.historias
+{
+    margin: auto;
+}
 .historias h2
 {
     margin: 3rem 3rem 0rem 3rem;
@@ -242,7 +254,7 @@ main h1
 }
 .historias ol
 {
-    margin: 0rem 6rem 6rem;
+    margin: 0rem 2rem 6rem;
     padding: 2rem;
     border-radius: 15px;
     color: white;
