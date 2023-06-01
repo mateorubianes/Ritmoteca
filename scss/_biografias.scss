@@ -1,0 +1,81 @@
+/* BIOGRAFIAS */
+.biografias h2
+{
+    grid-area: h2;
+    margin: 2rem auto 0rem auto;
+    text-align: center;
+}
+.biografias h4
+{
+    grid-area: h4;
+    margin-bottom: auto;
+    text-align: center;
+}
+.biografias ul
+{
+    // margin: 1rem;
+    // padding: 0;
+    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(23,28,75,1) 50%, rgba(0,0,0,1) 95%);
+}
+.ul1
+{
+    margin: 1rem 5rem 5rem 5rem;
+}
+.ul2
+{
+    margin: 1rem 5rem 5rem 5rem;
+}
+.biografias li
+{
+    font-size: 2rem;
+    padding: 1rem;
+    border: 1px solid #ebebeb;
+    list-style: none;
+}
+.biografias a
+{
+    text-decoration: none;
+    color: #ebebeb;
+}
+.ul1
+{
+    grid-area: ul1;
+}
+.ul2
+{
+    grid-area: ul2;
+}
+@media (max-width: 1023px)
+{
+    .ul2{
+        margin-top: 0px;
+    }
+    .ul1{
+        margin-bottom: 0px;
+    }
+}
+@media (min-width: 1024px)
+{
+    .biografias
+    {
+        margin: auto;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 30px auto;
+        grid-template-areas:
+        "h2 h2"
+        "h4 h4"
+        "ul1 ul2";
+    }
+    .ul1
+    {
+        margin: 1rem 0rem 5rem 5rem;
+    }
+    .ul2
+    {
+        margin: 1rem 5rem 5rem 0rem;
+    }
+}
