@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ritmoteca es una página donde encontraras las historias tu música favorita y las biografías de los artistas de las canciones. Ademas ofrecemos una amplía variedad de playlists para que conozcas los géneros de los que hablamos aquí.">
+    <meta name="keywords"  content="MUSICA, RITMOTECA, ROCK, BLUES, REGGAE, CANTANTES, BANDAS, PLAYLISTS, BIOGRAFIAS, ARTISTAS, HISTORIAS, ROCK PROGRESIVO, PUNK , ROCK REGGAE, ACDC, LOS PIOJOS ">
     <!-- CSS de Boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS animate -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Favicon -->
@@ -14,22 +20,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400;800&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-    <title>Rtimoteca</title>
+    <title>Ritmoteca | biografias</title>
 </head>
 <body>
     <!-- Logo y menu  -->
     <header class="header">
         <div class="titulo">
-            <img src="../img/logo.png" alt="logo osito saxofon">
-            <h1>RITMOTECA</h1>
+            <img src="../img/logo.png" alt="logo" class="animate__animated animate__bounceInLeft">
+            <h1 class="animate__animated animate__zoomIn">RITMOTECA</h1>
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="../index.html">INICIO</a></li>                
-                <li><a href="historias.html">HISTORIAS</a></li>                
-                <li><a href="biografias.html">BIOGRAFÍAS</a></li>                
-                <li><a href="playlists.html">PLAYLISTS</a></li>                
-                <li><a href="contacto.html">CONTACTO</a></li>                
+                <li><a href="../index.html" class="animate__animated animate__backInDown">INICIO</a></li>                
+                <li><a href="historias.html" class="animate__animated animate__backInDown">HISTORIAS</a></li>                
+                <li><a href="biografias.html" class="animate__animated animate__backInDown">BIOGRAFÍAS</a></li>                
+                <li><a href="playlists.html" class="animate__animated animate__backInDown">PLAYLISTS</a></li>                
+                <li><a href="contacto.html" class="animate__animated animate__backInDown">CONTACTO</a></li>                
             </ul>
         </nav>
     </header>
@@ -40,56 +46,954 @@
             <h2>TODO LO QUE QUIERAS SABER SOBRE TUS ARTISTAS FAVORITAS</h2>
             <h4>(click en el título para saber más)</h4>
             <ul class="ul1">
-                <li><a href="#">AC/DC</a></li>
-                <li><a href="#">Aerosmith</a></li>
-                <li><a href="#">Andrés Calamaro</a></li>
-                <li><a href="#">Attaque 77</a></li>
-                <li><a href="#">Babasónicos</a></li>
-                <li><a href="#">Black Sabbath</a></li>
-                <li><a href="#">Bersuit Vergarabat</a></li>
-                <li><a href="#">Bon Jovi</a></li>
-                <li><a href="#">Callejeros</a></li>
-                <li><a href="#">Charly García</a></li>
-                <li><a href="#">Divididos</a></li>
-                <li><a href="#">The Doors</a></li>
-                <li><a href="#">Eagles</a></li>
-                <li><a href="#">Enanitos Verdes</a></li>
-                <li><a href="#">Fabulosos Cadillacs</a></li>
-                <li><a href="#">Fito Páez</a></li>
-                <li><a href="#">Guns N' Roses</a></li>
-                <li><a href="#">Gustavo Cerati</a></li>
-                <li><a href="#">Iron Maiden</a></li>
-                <li><a href="#">Intoxicados</a></li>
-                <li><a href="#">Jimi Hendrix</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal1">AC/DC</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal2">Aerosmith</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal3">Andrés Calamaro</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal4">Attaque 77</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal5">Babasónicos</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal6">Bersuit Vergarabat</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal7">Bon Jovi</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal8">Callejeros</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal9">Charly García</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal10">Divididos</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal11">Enanitos Verdes</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal12">Fabulosos Cadillacs</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal13">Fito Páez</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal14">Guns N' Roses</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal15">Gustavo Cerati</a></li>
             </ul>
             <ul class="ul2">
-                <li><a href="#">Kiss</a></li>
-                <li><a href="#">Led Zeppelin</a></li>
-                <li><a href="#">La Renga</a></li>
-                <li><a href="#">Las Pelotas</a></li>
-                <li><a href="#">Los Abuelos De La Nada</a></li>
-                <li><a href="#">Los Enanitos Verdes</a></li>
-                <li><a href="#">Los Fabulosos Cadillacs</a></li>
-                <li><a href="#">Los Piojos</a></li>
-                <li><a href="#">Los Redondos</a></li>
-                <li><a href="#">Los Rodriguez</a></li>
-                <li><a href="#">Metallica</a></li>
-                <li><a href="#">Nirvana</a></li>
-                <li><a href="#">Pappo</a></li>
-                <li><a href="#">Pink Floyd</a></li>
-                <li><a href="#">Queen</a></li>
-                <li><a href="#">Red Hot Chili Peppers</a></li>
-                <li><a href="#">The Rolling Stones</a></li>
-                <li><a href="#">Soda Stereo</a></li>
-                <li><a href="#">Sumo</a></li>
-                <li><a href="#">U2</a></li>
-                <li><a href="#">Virus</a></li>
-            </ul>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal16">Jimi Hendrix</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal17">Kiss</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal18">Led Zeppelin</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal19">Las Pelotas</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal20">Los Abuelos De La Nada</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal21">Los Enanitos Verdes</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal22">Los Fabulosos Cadillacs</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal23">Los Piojos</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal24">Los Redondos</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal25">Los Rodriguez</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal26">Pappo</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal27">Pink Floyd</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal28">Queen</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal29">Red Hot Chili Peppers</a></li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal30">Sumo</a></li>
+            </ul> data-aos="fade-up"
               
         </div>
+
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">AC/DC</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        AC/DC es una legendaria banda de rock formada en Sídney, Australia, en 1973. Han sido reconocidos como una de las bandas más influyentes y exitosas en la historia del rock. Su estilo distintivo de hard rock y su energía en el escenario los han convertido en un referente en la industria musical.
+        
+                        La formación original de AC/DC incluía a los hermanos Malcolm y Angus Young, quienes se destacaron por sus intensos riffs de guitarra. A lo largo de los años, la banda ha experimentado algunos cambios en su alineación, pero siempre ha mantenido una esencia sólida y un sonido distintivo.
+        
+                        AC/DC saltó a la fama internacional con su álbum "Highway to Hell" en 1979, pero fue con su siguiente lanzamiento, "Back in Black" en 1980, que alcanzaron un éxito masivo. Este álbum se convirtió en uno de los más vendidos de todos los tiempos y presentó canciones emblemáticas como "Hells Bells", "Back in Black" y "You Shook Me All Night Long".
+        
+                        A lo largo de su carrera, AC/DC ha lanzado álbumes icónicos y ha llenado estadios alrededor del mundo con su potente presencia en el escenario. Han vendido más de 200 millones de discos en todo el mundo y han dejado una huella indeleble en la historia del rock.
+        
+                        A pesar de enfrentar desafíos personales y la trágica muerte de algunos de sus miembros, AC/DC ha demostrado una increíble resistencia y ha seguido tocando con una pasión inquebrantable. Su legado perdura a través de generaciones de fanáticos que continúan disfrutando de su música atemporal.
+        
+                        Con hits icónicos como "Thunderstruck", "Highway to Hell", "Shoot to Thrill" y "Back in Black", AC/DC se ha convertido en un sinónimo de energía y actitud en el mundo del rock. Su música trasciende barreras y continúa inspirando a nuevas generaciones de artistas y fanáticos.
+        
+                        ¡Prepárate para rockear con AC/DC y sumérgete en su poderoso legado musical!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Aerosmith</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Aerosmith es una legendaria banda de rock estadounidense formada en Boston, Massachusetts, en 1970. Conocidos por su estilo único que fusiona rock, blues y hard rock, han dejado una marca significativa en la industria musical.
+        
+                        La banda se compone de Steven Tyler (voz principal), Joe Perry (guitarra líder), Brad Whitford (guitarra rítmica), Tom Hamilton (bajo) y Joey Kramer (batería). Aerosmith ganó popularidad en los años 70 con álbumes exitosos como "Toys in the Attic" y "Rocks". Sin embargo, fue en la década de 1980 cuando alcanzaron una fama masiva con hits como "Dream On", "Sweet Emotion" y "Walk This Way".
+        
+                        Aerosmith ha vendido más de 150 millones de álbumes en todo el mundo y ha cosechado numerosos premios a lo largo de su carrera, incluyendo cuatro premios Grammy. Su energético estilo musical y las actuaciones enérgicas de Steven Tyler en el escenario los han convertido en una de las bandas de rock más influyentes y exitosas de todos los tiempos.
+        
+                        A lo largo de su trayectoria, la banda ha enfrentado desafíos personales y luchas con adicciones, pero han demostrado una notable resiliencia y han seguido adelante. Han logrado mantener una base de fanáticos leales y han seguido lanzando álbumes aclamados como "Permanent Vacation", "Pump" y "Get a Grip".
+        
+                        El legado de Aerosmith incluye éxitos inolvidables, colaboraciones icónicas y una influencia duradera en generaciones de músicos. Su capacidad para combinar letras pegadizas con poderosos riffs de guitarra y la distintiva voz de Steven Tyler los ha convertido en una de las bandas de rock más reconocibles y admiradas de todos los tiempos.
+        
+                        ¡Prepárate para sumergirte en el mundo de Aerosmith y disfrutar de su música atemporal y su enérgico espíritu rockero!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Andrés Calamaro</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Andrés Calamaro es un reconocido cantante, compositor y músico argentino nacido el 22 de agosto de 1961 en Buenos Aires. Es considerado una de las figuras más influyentes y talentosas del rock en español.
+        
+                        Calamaro comenzó su carrera musical en la década de 1980 como miembro de la banda Los Abuelos de la Nada, donde demostró su habilidad como compositor y su carisma en el escenario. Tras la disolución de la banda, inició su carrera en solitario y ha lanzado numerosos álbumes aclamados.
+        
+                        Su música abarca una amplia variedad de estilos, incluyendo rock, pop, tango y baladas. Sus letras poéticas y su capacidad para transmitir emociones han resonado con el público a lo largo de los años. Canciones como "Flaca", "Paloma", "Los Aviones" y "Crímenes Perfectos" se han convertido en clásicos de la música en español.
+        
+                        Calamaro ha recibido numerosos premios y reconocimientos a lo largo de su carrera, incluyendo múltiples Premios Grammy Latinos. Su influencia en la música hispana se extiende más allá de Argentina, llegando a audiencias en toda América Latina y España.
+        
+                        Además de su carrera en solitario, Calamaro ha colaborado con diversos artistas y ha participado en proyectos musicales conjuntos. Su habilidad para adaptarse a diferentes estilos y su versatilidad como músico lo han convertido en una figura respetada y admirada en la industria.
+        
+                        A lo largo de los años, Andrés Calamaro ha dejado una huella imborrable en la música en español, cautivando a millones de seguidores con su talento y su autenticidad. Su legado perdura a través de su vasta discografía y su continua exploración musical.
+        
+                        ¡Disfruta de la música y la pasión de Andrés Calamaro!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Attaque 77</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Attaque 77 es una influyente banda de punk rock originaria de Argentina. Formada en 1987 en Buenos Aires, el grupo ha dejado una huella duradera en la escena musical de su país y más allá.
+        
+                        Los miembros fundadores de Attaque 77 son Mariano Martínez (guitarra y voz), Ciro Pertusi (bajo y voz) y Leonardo De Cecco (batería). A lo largo de su carrera, la banda ha experimentado cambios en su alineación, pero su espíritu punk y su compromiso con la música no han disminuido.
+        
+                        Más allá de su éxito y popularidad, los miembros de Attaque 77 han enfrentado sus propias luchas y desafíos personales. Han sido defensores de los derechos humanos y han utilizado su música como plataforma para abordar temas sociales y políticos en Argentina.
+        
+                        Mariano Martínez, además de su carrera musical, ha incursionado en el cine y la actuación, demostrando su versatilidad y talento en diferentes disciplinas artísticas. Ciro Pertusi, tras dejar la banda en 2009, continuó su carrera musical como solista y formó su propia banda llamada Jauría.
+        
+                        A lo largo de los años, Attaque 77 ha lanzado álbumes icónicos como "Dulce Navidad", "Ángeles Caídos" y "Radio Insomnio", consolidando su estatus como una de las bandas más influyentes del punk rock en español. Su música ha resonado con generaciones de seguidores, quienes han encontrado en sus letras y melodías una forma de expresión y conexión.
+        
+                        Con su energía explosiva en el escenario y su compromiso con causas sociales, Attaque 77 ha dejado una marca indeleble en la historia del rock argentino. Su legado perdura a través de su música y su espíritu rebelde y auténtico.
+        
+                        ¡Sumérgete en el mundo de Attaque 77 y disfruta de su música enérgica y su pasión por el cambio!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Babasónicos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Babasónicos es una reconocida banda de rock alternativo originaria de Argentina. Formada en 1991 en Buenos Aires, el grupo ha dejado una huella única en la escena musical con su estilo vanguardista y letras poéticas.
+        
+                        Los miembros fundadores de Babasónicos son Adrián Dárgelos (voz), Diego Rodríguez (teclados) y Gabriel Mannelli (guitarra). A lo largo de su trayectoria, la banda ha experimentado cambios en su alineación, pero ha mantenido su identidad artística y su enfoque innovador.
+        
+                        Además de su éxito en la música, los integrantes de Babasónicos han llevado vidas interesantes y diversas fuera del escenario. Han explorado distintas disciplinas artísticas y han incursionado en proyectos paralelos, demostrando su versatilidad y talento.
+        
+                        Adrián Dárgelos, por ejemplo, ha trabajado como actor y ha publicado un libro de poesía. Diego Rodríguez ha incursionado en la producción musical y ha colaborado con otros artistas. Gabriel Mannelli, por su parte, ha participado en proyectos de diseño y arte.
+        
+                        La música de Babasónicos se caracteriza por su experimentación sonora y su fusión de géneros, como el rock, el pop y la electrónica. Canciones como "Putita", "Yegua" y "El Colmo" se han convertido en clásicos del repertorio de la banda, destacando por sus letras provocativas y su estilo provocador.
+        
+                        A lo largo de su carrera, Babasónicos ha lanzado álbumes aclamados, obteniendo premios y reconocimientos tanto en Argentina como en el ámbito internacional. Su legado en la música en español es innegable, influyendo en generaciones de seguidores y artistas emergentes.
+        
+                        Sumérgete en el mundo creativo y apasionado de Babasónicos, y descubre la singularidad de su sonido y la profundidad de sus vidas personales.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Bersuit Vergarabat</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Bersuit Vergarabat es una influyente banda de rock argentino que se formó en la década de 1980 en Buenos Aires. Conocidos por su estilo musical único y letras provocativas, han dejado una huella duradera en la escena musical de América Latina.
+        
+                        Los miembros fundadores de Bersuit Vergarabat son Gustavo Cordera (voz), Carlos Martín (guitarra), Juan Subirá (teclados), Oscar Righi (guitarra), Pepe Céspedes (bajo), Daniel Suárez (batería) y Germán Sbarbati (saxofón). A lo largo de los años, han habido cambios en la alineación, pero el espíritu rebelde y la pasión artística han permanecido constantes.
+        
+                        Más allá de su éxito en la música, los integrantes de Bersuit Vergarabat tienen historias personales fascinantes. Han expresado su compromiso con causas sociales y políticas a través de su música, lo que les ha valido tanto admiradores leales como críticos.
+        
+                        Gustavo Cordera, en particular, ha sido una figura polémica y carismática dentro y fuera del escenario. Su estilo de vida bohemio y sus declaraciones controvertidas han generado debates y han influido en la identidad de la banda.
+        
+                        A lo largo de su carrera, Bersuit Vergarabat ha explorado una amplia gama de estilos musicales, fusionando rock, cumbia, reggae y otros géneros en su sonido característico. Sus canciones, como "La Argentinidad al Palo", "Un Pacto" y "El Tiempo No Para", se han convertido en himnos para sus seguidores.
+        
+                        La banda ha lanzado varios álbumes aclamados, obteniendo reconocimiento tanto en Argentina como en el ámbito internacional. Su música y letras desafiantes han resonado en diversas generaciones, y su legado perdura en la escena musical latinoamericana.
+        
+                        Explora las vidas personales y la música apasionada de Bersuit Vergarabat, y sumérgete en el universo de una banda que desafía los límites y rompe convenciones.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Bon Jovi</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Bon Jovi es una icónica banda de rock estadounidense formada en Nueva Jersey en 1983. Sus miembros fundadores son Jon Bon Jovi (voz y guitarra), Richie Sambora (guitarra), David Bryan (teclados) y Tico Torres (batería).
+        
+                        La historia de Bon Jovi está llena de éxitos musicales y momentos memorables, pero también revela las experiencias personales de los artistas. Jon Bon Jovi, en particular, ha sido un ícono de la música y una figura emblemática del rock, conocido tanto por su talento vocal como por su carisma en el escenario.
+        
+                        A lo largo de los años, Bon Jovi ha enfrentado desafíos y ha superado obstáculos, tanto a nivel personal como profesional. Han compartido su viaje en canciones como "Livin' on a Prayer", "It's My Life" y "Always", que han cautivado a millones de fans en todo el mundo.
+        
+                        Además de su éxito en la música, los miembros de Bon Jovi han estado involucrados en causas benéficas y han utilizado su plataforma para promover cambios positivos en el mundo. Jon Bon Jovi, en particular, ha sido reconocido por su labor filantrópica y su compromiso con la lucha contra la falta de vivienda y el hambre.
+        
+                        A lo largo de las décadas, Bon Jovi ha lanzado álbumes exitosos y ha realizado giras internacionales, consolidando su lugar como una de las bandas de rock más influyentes de todos los tiempos.
+        
+                        Explora las vidas personales de los artistas de Bon Jovi y sumérgete en la historia de una banda que ha dejado una huella indeleble en la industria musical y en los corazones de sus seguidores.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Callejeros</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Callejeros fue una banda de rock argentino formada en el año 1995 en el barrio de Villa Celina, Buenos Aires. Sus miembros incluían a Patricio Fontanet (voz), Eduardo Vázquez (guitarra), Maximiliano Djerfy (guitarra), Christian Torrejón (bajo) y Juan Carbone (batería).
+        
+                        La historia de Callejeros estuvo marcada por su conexión con la realidad cotidiana y sus letras que abordaban temas sociales y personales. A medida que ganaron popularidad, también enfrentaron desafíos y controversias, pero su música resonó en los corazones de muchos fanáticos.
+        
+                        Dentro de las vidas personales de los artistas de Callejeros, cada miembro de la banda tenía su propia historia y experiencias únicas. Desde la pasión y la dedicación por la música hasta los obstáculos y dificultades que enfrentaron en su camino, su vida personal influyó en su música y en su conexión con el público.
+        
+                        Callejeros se destacó por su estilo enérgico y sus letras honestas, que reflejaban las vivencias y emociones de la juventud argentina. Su música resonó en la sociedad y se convirtió en una voz para muchos jóvenes que se identificaban con sus canciones.
+        
+                        Lamentablemente, en 2004, la banda sufrió una tragedia cuando ocurrió el incendio en el boliche República Cromañón durante uno de sus conciertos. El incidente causó la pérdida de vidas y tuvo un profundo impacto en la banda y en la sociedad en general.
+        
+                        A pesar de las adversidades, el legado de Callejeros trasciende y su música sigue siendo escuchada y apreciada por numerosos seguidores. Su historia es un recordatorio de la importancia de la música como medio de expresión y conexión emocional.
+        
+                        Explora las vidas personales de los artistas de Callejeros y sumérgete en la historia de una banda que dejó una huella significativa en la música argentina y en la memoria de sus seguidores.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Charly García</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Charly García es uno de los músicos más influyentes y reconocidos de la historia del rock argentino. Nacido el 23 de octubre de 1951 en Buenos Aires, su nombre completo es Carlos Alberto García Moreno. Desde temprana edad, mostró un talento innato para la música y se convirtió en un virtuoso del piano y la guitarra.
+        
+                        La vida personal de Charly García ha estado marcada por su genialidad artística y sus luchas personales. A lo largo de su carrera, ha experimentado altibajos emocionales y ha enfrentado desafíos relacionados con la adicción y la salud mental. Sin embargo, esto no ha menguado su impacto en la música y su capacidad para componer canciones icónicas.
+        
+                        García ha sido un innovador en el ámbito musical, fusionando diferentes estilos como el rock, el pop, el jazz y el tango en su obra. Sus letras profundas y poéticas reflejan sus experiencias personales y su visión del mundo. Su talento musical, su voz única y su presencia carismática en el escenario lo han convertido en un ícono de la música argentina.
+        
+                        A lo largo de su carrera, Charly García ha formado parte de bandas como Sui Generis, Serú Girán y La Máquina de Hacer Pájaros, así como también ha lanzado álbumes en solitario. Ha recibido numerosos premios y reconocimientos a lo largo de su trayectoria, y su legado artístico perdura hasta el día de hoy.
+        
+                        La vida personal de Charly García ha sido objeto de interés y admiración por parte de sus seguidores, quienes reconocen su genialidad creativa y su resiliencia frente a las dificultades. Su música ha trascendido generaciones y continúa inspirando a nuevos artistas en el panorama musical argentino e internacional.
+        
+                        Explora la vida personal y la obra de Charly García y sumérgete en el legado de uno de los artistas más emblemáticos de la música rock en América Latina.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Divididos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Divididos es una banda argentina formada en 1988 por Ricardo Mollo y Diego Arnedo, dos reconocidos músicos que previamente habían formado parte de la icónica banda Sumo. Desde sus inicios, Divididos ha dejado una huella indeleble en la escena musical de Argentina y se ha convertido en una de las bandas más influyentes y queridas del país.
+        
+                        La historia de Divididos está marcada por la fuerza y la personalidad de sus integrantes. Ricardo Mollo, reconocido por su virtuosismo en la guitarra y su voz única, ha sido una figura destacada en el ámbito del rock argentino. Diego Arnedo, por su parte, ha sido el bajista y compositor principal de la banda, aportando su estilo característico y su talento musical.
+        
+                        Más allá de su éxito en el mundo de la música, la vida personal de los integrantes de Divididos ha sido un factor determinante en su trayectoria. Tanto Mollo como Arnedo han enfrentado desafíos y experiencias que han dejado huella en su música. Sus vivencias, pasiones y relaciones personales han influido en la creación de canciones que han conquistado corazones y se han convertido en himnos de toda una generación.
+        
+                        La conexión entre Mollo y Arnedo ha sido clave para la evolución y la identidad de Divididos. Su química musical y su amistad han sido el motor que ha impulsado la banda a lo largo de los años. Juntos, han creado un sonido único que combina elementos del rock, el reggae, el funk y el folclore argentino, entre otros géneros, dando vida a canciones que transmiten emociones y reflexiones profundas.
+        
+                        Divididos ha dejado un legado musical inigualable y continúa cautivando a sus seguidores con su energía en el escenario y su talento indiscutible. Su música trasciende fronteras y generaciones, y su influencia en la escena del rock en Argentina es innegable.
+        
+                        Explora las vidas personales de los artistas de Divididos y sumérgete en su música única y apasionante, que refleja la diversidad y la intensidad de la vida misma.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Enanitos Verdes</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Enanitos Verdes es una banda argentina de rock formada en la década de 1980. Sus integrantes originales son Marciano Cantero, Felipe Staiti y Daniel Piccolo. A lo largo de su carrera, han dejado una marca indeleble en la escena musical latinoamericana y se han convertido en uno de los referentes del rock en español.
+        
+                        La historia de Enanitos Verdes está llena de altibajos y superaciones personales. Marciano Cantero, vocalista y bajista de la banda, ha enfrentado desafíos personales que han influido en su música y en su enfoque artístico. Felipe Staiti, guitarrista principal, ha desarrollado un estilo único y ha sido un pilar fundamental en la creación de los sonidos característicos de la banda. Daniel Piccolo, baterista original, aportó su talento y energía al grupo durante muchos años.
+        
+                        La música de Enanitos Verdes es el resultado de las vivencias y experiencias personales de sus integrantes. Han explorado temas como el amor, la pérdida, la nostalgia y la superación personal en sus canciones, creando melodías pegadizas y letras que conectan con las emociones del público.
+        
+                        A lo largo de su carrera, Enanitos Verdes ha conquistado los escenarios más importantes de América Latina y ha obtenido reconocimiento internacional. Han logrado el éxito comercial con canciones icónicas como "Lamento Boliviano", "Mil Horas" y "Guitarras Blancas", entre otras.
+        
+                        Además de su éxito musical, la banda ha dejado huella por su compromiso social y su apoyo a diversas causas. Han utilizado su plataforma para concientizar sobre temas como el medio ambiente, la paz y la igualdad, convirtiéndose en una voz influyente en la sociedad.
+        
+                        Explora las vidas personales de los artistas de Enanitos Verdes y sumérgete en su música única, que combina el rock con elementos de pop y balada. Descubre la pasión y el talento que han llevado a esta banda a convertirse en un ícono del rock en español.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Los Fabulosos Cadillacs</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Los Fabulosos Cadillacs es una banda argentina de rock y ska formada en la década de 1980. Sus integrantes han vivido experiencias personales que han influido en su música y en su trayectoria artística.
+        
+                        La banda se caracteriza por fusionar diferentes estilos musicales, como el rock, el reggae, el ska y la música latina, creando un sonido único y original. Han explorado temáticas variadas en sus canciones, abordando tanto temas sociales y políticos como aspectos de sus propias vidas.
+        
+                        Durante su carrera, Los Fabulosos Cadillacs han enfrentado momentos de éxito y también desafíos personales. Han logrado superar obstáculos y mantenerse unidos como grupo, consolidando su lugar en la escena musical latinoamericana.
+        
+                        Los integrantes de la banda han compartido experiencias de amistad, amor, lucha y superación, y han plasmado estas vivencias en su música. Han sido reconocidos por su energía en el escenario y por la calidad de sus composiciones, que transmiten emociones y mensajes profundos.
+        
+                        A lo largo de los años, Los Fabulosos Cadillacs han dejado un legado musical duradero y han influido en generaciones de artistas. Han logrado éxitos comerciales y han sido galardonados con premios y reconocimientos tanto en Argentina como a nivel internacional.
+        
+                        Explora las vidas personales de los artistas de Los Fabulosos Cadillacs a través de su música y déjate llevar por sus ritmos contagiosos y letras llenas de significado. Descubre la historia de una banda que ha dejado huella en la música latina y en el corazón de sus fans.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Fito Paez</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Fito Paez es un reconocido cantautor argentino, conocido por su talento musical y sus letras emotivas. A lo largo de su carrera, ha explorado diferentes géneros musicales y ha dejado una huella significativa en la escena musical latinoamericana.
+        
+                        La vida personal de Fito Paez ha estado marcada por una intensidad artística y emocional. Sus composiciones reflejan sus experiencias personales, sus amores, sus desafíos y sus reflexiones más íntimas. A través de su música, ha logrado conectarse con el público y transmitir emociones profundas.
+        
+                        Fito Paez ha vivido momentos de éxito, pero también ha enfrentado dificultades y desafíos a lo largo de su vida. Su camino artístico ha estado lleno de altibajos, pero siempre ha mantenido una pasión inquebrantable por la música y una autenticidad en su obra.
+        
+                        Como artista, Fito Paez ha recibido numerosos premios y reconocimientos a lo largo de su carrera. Ha experimentado con diversos estilos musicales, desde el rock hasta el pop y la música latina, dejando su huella en cada uno de ellos.
+        
+                        La música de Fito Paez es una ventana a su mundo interior, a sus pensamientos y sentimientos más profundos. Sus canciones son una invitación a explorar las emociones y reflexionar sobre la vida.
+        
+                        Descubre la vida personal de Fito Paez a través de su música y déjate cautivar por su estilo único y su voz inconfundible. Sumérgete en sus letras y disfruta de la pasión y autenticidad que transmite en cada una de sus composiciones.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Guns N' Roses</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Guns N' Roses es una legendaria banda de rock formada en Los Ángeles en 1985. Conocidos por su estilo único y su actitud rebelde, la banda ha dejado una marca indeleble en la historia de la música.
+        
+                        Las vidas personales de los miembros de Guns N' Roses han sido tan intensas y apasionantes como su música. A lo largo de los años, han enfrentado altibajos, luchas internas y momentos de fama desmedida.
+        
+                        La formación original de la banda incluía a Axl Rose, Slash, Izzy Stradlin, Duff McKagan y Steven Adler. Cada uno de ellos ha tenido experiencias personales y desafíos individuales que han influido en su carrera musical.
+        
+                        Axl Rose, el vocalista principal, ha sido conocido por su temperamento volátil y su vida personal turbulenta. Slash, reconocido por su habilidad con la guitarra, ha tenido una carrera musical prolífica fuera de Guns N' Roses.
+        
+                        La dinámica entre los miembros de la banda ha sido a menudo compleja, pero su talento musical y su pasión por la música los ha mantenido unidos a lo largo de los años.
+        
+                        Guns N' Roses ha sido reconocida por éxitos como "Sweet Child O' Mine", "Welcome to the Jungle" y "November Rain", que han dejado una huella imborrable en la historia del rock.
+        
+                        A pesar de los desafíos y los cambios en la alineación, Guns N' Roses ha continuado su legado musical, cautivando a audiencias de todo el mundo con su energía y su estilo inconfundible.
+        
+                        Descubre la historia personal de los miembros de Guns N' Roses a través de su música y sumérgete en el mundo rebelde y apasionante de esta icónica banda de rock.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Gustavo Cerati</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Gustavo Cerati fue un destacado músico y compositor argentino, reconocido por su talento y versatilidad artística. Nacido el 11 de agosto de 1959 en Buenos Aires, Cerati se convirtió en una figura icónica del rock en español.
+        
+                        A lo largo de su carrera, Cerati fue el líder y vocalista de la influyente banda de rock Soda Stereo, que se formó en 1982. Junto a Zeta Bosio y Charly Alberti, la banda alcanzó un gran éxito y se convirtió en una de las más influyentes de América Latina.
+        
+                        La vida personal de Gustavo Cerati estuvo marcada por su dedicación a la música y su búsqueda constante de innovación. Sus letras y composiciones reflejaban su introspección y su visión artística única.
+        
+                        Cerati experimentó tanto en el ámbito musical como en el personal. Fue un apasionado de la música electrónica y fusionó géneros para crear un sonido distintivo que trascendió fronteras.
+        
+                        Además de su éxito con Soda Stereo, Cerati también se destacó como solista, lanzando varios álbumes aclamados. Su carrera en solitario le permitió explorar nuevos horizontes musicales y consolidar su legado como uno de los artistas más influyentes de su generación.
+        
+                        Lamentablemente, en 2010, Cerati sufrió un accidente cerebrovascular que lo dejó en estado de coma. Después de varios años en esa condición, falleció el 4 de septiembre de 2014, dejando un vacío en la música latina y un legado perdurable.
+        
+                        La vida personal de Gustavo Cerati estuvo marcada por su pasión por la música, su búsqueda constante de la excelencia y su espíritu creativo. Su legado perdura a través de su música y su influencia en generaciones posteriores de artistas.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Jimi Hendrix</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Jimi Hendrix fue un virtuoso guitarrista, cantante y compositor estadounidense, considerado uno de los músicos más influyentes en la historia del rock. Nació el 27 de noviembre de 1942 en Seattle, Washington.
+        
+                        La vida personal de Jimi Hendrix estuvo llena de altibajos y experiencias que lo moldearon tanto como músico como individuo. Desde su infancia, Hendrix mostró un talento innato para la música y un amor por la guitarra.
+        
+                        A lo largo de su carrera, Hendrix experimentó con diversos estilos musicales, fusionando el blues, el rock y el soul en su propio sonido distintivo. Su habilidad técnica y su innovación en la guitarra eléctrica lo llevaron a convertirse en una leyenda del rock.
+        
+                        Además de su talento musical, Hendrix también fue conocido por su personalidad carismática y su estilo único. Era un artista expresivo y creativo en el escenario, cautivando a las audiencias con su energía y su virtuosismo.
+        
+                        Sin embargo, detrás de su imagen de estrella del rock, Hendrix luchó con problemas personales y adicciones a lo largo de su vida. A pesar de sus dificultades, su legado musical y su influencia perduran hasta el día de hoy.
+        
+                        Trágicamente, Jimi Hendrix falleció a la edad de 27 años el 18 de septiembre de 1970. Su muerte prematura dejó un vacío en el mundo de la música, pero su música sigue siendo admirada y estudiada por generaciones posteriores.
+        
+                        La vida personal de Jimi Hendrix estuvo marcada por su pasión por la música, su talento innato y su influencia duradera en el rock. Su legado como uno de los guitarristas más grandes de todos los tiempos continúa inspirando a músicos de todo el mundo.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Kiss</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Kiss es una banda de rock formada en Nueva York en 1973. Está compuesta por Paul Stanley, Gene Simmons, Ace Frehley y Peter Criss, quienes adoptaron personajes y maquillajes únicos para crear una imagen impactante y teatral.
+        
+                        La vida personal de los miembros de Kiss ha sido una parte importante de su historia. Paul Stanley, conocido por su personaje "Starchild", ha hablado abiertamente sobre sus experiencias y desafíos personales. Gene Simmons, también conocido como "The Demon", ha sido reconocido por su espíritu emprendedor y sus relaciones públicas.
+        
+                        Ace Frehley, apodado "Spaceman", ha enfrentado altibajos en su vida personal, incluyendo problemas de adicción y la superación de obstáculos. Peter Criss, conocido como "Catman", ha compartido sus luchas y triunfos personales, incluyendo su batalla contra el cáncer.
+        
+                        A lo largo de los años, Kiss ha dejado una marca indeleble en la industria musical con su música enérgica y sus espectaculares actuaciones en vivo. Han vendido millones de discos en todo el mundo y han sido reconocidos como una de las bandas más influyentes del rock.
+        
+                        Más allá de su música, Kiss ha cultivado una base de seguidores leales conocidos como "Kiss Army". La banda ha demostrado un compromiso inquebrantable con sus fans y ha construido una conexión personal duradera con ellos a lo largo de los años.
+        
+                        A pesar de los cambios en la formación a lo largo de los años, Kiss ha mantenido su estatus icónico y ha dejado un legado perdurable en la historia del rock. Su música, su imagen impactante y su dedicación a sus seguidores los han convertido en una de las bandas más influyentes y exitosas de todos los tiempos.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Led Zeppelin</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Led Zeppelin fue una banda de rock formada en Londres en 1968. Estuvo compuesta por Jimmy Page, Robert Plant, John Paul Jones y John Bonham. 
+        
+                        La vida personal de los miembros de Led Zeppelin ha influido significativamente en su música y en su legado como una de las bandas más influyentes de la historia. Jimmy Page, conocido por su destreza en la guitarra, ha tenido una carrera musical prolífica y ha sido reconocido por su enfoque experimental y su pasión por el ocultismo.
+        
+                        Robert Plant, el vocalista principal, ha compartido detalles sobre sus experiencias personales y emocionales a lo largo de los años, lo que ha influido en sus letras y en la energía que transmitía en el escenario. John Paul Jones, el bajista y tecladista, ha sido un músico versátil y respetado en la industria, contribuyendo con su talento a la creación del sonido distintivo de la banda.
+        
+                        La vida personal de John Bonham, el legendario baterista de Led Zeppelin, estuvo marcada por su virtuosismo musical y su trágica muerte prematura en 1980. Su estilo innovador y su energía en el escenario fueron fundamentales para el sonido y la identidad de la banda.
+        
+                        A lo largo de su carrera, Led Zeppelin lanzó álbumes aclamados por la crítica y éxitos icónicos como "Stairway to Heaven" y "Kashmir". Su música combinaba elementos de blues, rock y folk, y su enfoque experimental sentó las bases para el desarrollo del hard rock y el heavy metal.
+        
+                        Aunque la banda se disolvió en 1980 después de la muerte de Bonham, su influencia perdura en la música hasta el día de hoy. Led Zeppelin dejó un legado imborrable en la historia del rock, tanto por su habilidad musical como por las historias personales y la energía que transmitían en el escenario.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Las Pelotas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Las Pelotas es una banda de rock argentino formada en 1989. Está compuesta por Germán Daffunchio, Alejandro Sokol, Gabriel Fernández Capello, Gustavo Jove, y Tomás Sussmann. 
+        
+                        La vida personal de los miembros de Las Pelotas ha influido en su música y ha dejado una huella en la historia del rock argentino. Germán Daffunchio, líder y fundador de la banda, ha compartido detalles sobre sus experiencias personales y su lucha contra las adicciones, lo que ha influenciado en las letras y la energía de sus canciones.
+        
+                        Alejandro Sokol, uno de los miembros originales de la banda, también dejó una marca personal y artística significativa. Su talento como cantante y compositor se combinaba con una personalidad introspectiva y sensible.
+        
+                        Gabriel Fernández Capello, más conocido como "Gabo", ha sido un guitarrista destacado en la escena musical argentina. Su estilo único y su pasión por la música han dejado una huella en el sonido distintivo de Las Pelotas.
+        
+                        Gustavo Jove y Tomás Sussmann, miembros más recientes de la banda, también han contribuido con su talento y personalidad a la trayectoria de Las Pelotas.
+        
+                        A lo largo de su carrera, Las Pelotas ha lanzado álbumes exitosos y ha cosechado seguidores fieles en Argentina y otros países de habla hispana. Sus canciones abordan temas personales, sociales y políticos, reflejando la realidad de su época y generando identificación en su audiencia.
+        
+                        Con más de tres décadas en la escena musical, Las Pelotas ha dejado una marca indeleble en el rock argentino, y su legado perdura en la música y en las vidas de sus seguidores.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Los Abuelos De La Nada</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Los Abuelos De La Nada fue una banda de rock argentino formada en 1982. Estuvo liderada por Miguel Abuelo, reconocido cantante y compositor, quien tuvo una vida llena de experiencias y vivencias intensas.
+        
+                        La vida personal de Miguel Abuelo influyó en su música y en la esencia de Los Abuelos De La Nada. Desde su infancia y juventud bohemia en Buenos Aires, hasta sus viajes por Europa y sus encuentros con distintas culturas, Abuelo vivió una vida errante y en constante búsqueda espiritual.
+        
+                        Junto a su banda, Miguel Abuelo logró transmitir en sus canciones sus experiencias personales y su visión única del mundo. El grupo se destacó por su estilo ecléctico y por la fusión de géneros musicales como el rock, el blues y el funk.
+        
+                        Los Abuelos De La Nada tuvieron un breve pero intenso recorrido musical, marcado por la personalidad carismática de Miguel Abuelo. Sin embargo, los problemas personales y las adicciones afectaron a la banda y provocaron su disolución en 1984.
+        
+                        A pesar de su corta existencia, Los Abuelos De La Nada dejaron un legado musical significativo en la escena del rock argentino. Sus canciones continúan siendo recordadas y admiradas, y su estilo ha influenciado a varias generaciones de músicos.
+        
+                        Miguel Abuelo, una figura icónica y enigmática, falleció en 1988, pero su legado perdura en la música y en las vidas de quienes disfrutaron de su obra y fueron inspirados por su espíritu libre y auténtico.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Los Enanitos Verdes</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Los Enanitos Verdes es una banda de rock argentino formada en 1979. Está integrada por Marciano Cantero, Felipe Staiti y Jota Morelli, quienes han dejado una huella imborrable en la música latinoamericana.
+        
+                        Las vidas personales de los integrantes de Los Enanitos Verdes han sido fundamentales en su trayectoria. Marciano Cantero, vocalista y bajista, ha sido el principal compositor de la banda, plasmando en sus canciones sus experiencias, emociones y reflexiones más íntimas.
+        
+                        Felipe Staiti, guitarrista, ha contribuido con su estilo y talento a la identidad sonora de la banda. Su dedicación y pasión por la música han sido pilares en el crecimiento y éxito de Los Enanitos Verdes.
+        
+                        Jota Morelli, baterista, ha aportado una energía inigualable a la música de la banda. Su habilidad rítmica y carisma en el escenario han conquistado a los fanáticos en cada presentación.
+        
+                        A lo largo de su carrera, Los Enanitos Verdes han creado himnos del rock en español y han logrado un gran reconocimiento tanto en Argentina como a nivel internacional. Su estilo enérgico, melodías pegadizas y letras emotivas han conquistado corazones y han dejado una marca imborrable en la historia del rock.
+        
+                        Además de su éxito musical, los integrantes de Los Enanitos Verdes han enfrentado desafíos personales y han superado obstáculos a lo largo del camino. Su perseverancia y amor por la música los han mantenido unidos y han seguido creando música que trasciende fronteras.
+        
+                        Los Enanitos Verdes continúan activos en la actualidad, demostrando que su pasión por la música no tiene límites. Siguen cautivando a nuevas generaciones de seguidores y dejando un legado inspirador en la industria musical.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Los Fabulosos Cadillacs</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Los Fabulosos Cadillacs es una banda de rock argentino formada en 1985. Sus integrantes, Vicentico, Flavio Cianciarulo y Sergio Rotman, entre otros, han dejado una marca indeleble en la música latinoamericana.
+        
+                        Las vidas personales de los artistas han sido una parte fundamental en la historia de Los Fabulosos Cadillacs. Cada uno de ellos ha aportado su estilo y personalidad únicos a la banda, creando una combinación ecléctica y llena de energía en su música.
+        
+                        Vicentico, vocalista principal, ha cautivado a audiencias con su voz potente y emotiva. Su presencia carismática en el escenario y su talento como compositor han contribuido al éxito de la banda.
+        
+                        Flavio Cianciarulo, bajista y compositor, ha aportado su creatividad y visión artística a Los Fabulosos Cadillacs. Sus letras profundas y sus líneas de bajo pegadizas han sido una parte integral de su sonido distintivo.
+        
+                        Sergio Rotman, saxofonista y miembro original de la banda, ha añadido su talento musical y su energía en el escenario. Su versatilidad como músico ha enriquecido las composiciones de la banda.
+        
+                        A lo largo de su carrera, Los Fabulosos Cadillacs han explorado diferentes géneros musicales, fusionando el rock con ska, reggae, punk y música latina. Han cosechado éxitos y reconocimientos a nivel nacional e internacional, ganando múltiples premios Grammy y vendiendo millones de discos.
+        
+                        Además de su música, los miembros de Los Fabulosos Cadillacs han enfrentado desafíos personales y han seguido evolucionando tanto artística como personalmente. Su compromiso con la música y su habilidad para conectarse con el público los han convertido en una de las bandas más influyentes de América Latina.
+        
+                        A día de hoy, Los Fabulosos Cadillacs siguen siendo una fuerza creativa y continúan dejando huella en la música. Su legado perdura a través de su música y el impacto que han tenido en generaciones de seguidores.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Los Piojos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Los Piojos es una banda de rock argentino formada en 1988. Sus integrantes, entre ellos Ciro Pertusi, Micky Rodríguez y Gustavo Kupinski, han dejado una marca indeleble en la escena musical de Argentina.
+        
+                        Las vidas personales de los artistas han sido una parte importante en la historia de Los Piojos. Cada uno de ellos ha aportado su estilo y personalidad únicos a la banda, creando un sonido distintivo y auténtico.
+        
+                        Ciro Pertusi, vocalista principal y compositor, ha sido una figura emblemática de la banda. Con su voz y carisma en el escenario, ha conectado con el público y transmitido emociones a través de sus letras y melodías.
+        
+                        Micky Rodríguez, bajista y miembro fundador, ha sido una pieza clave en la creación del sonido característico de Los Piojos. Sus líneas de bajo potentes y melódicas han contribuido a la identidad musical de la banda.
+        
+                        Gustavo Kupinski, guitarrista, ha aportado su talento y versatilidad a los arreglos musicales de Los Piojos. Su habilidad para crear riffs y solos memorables ha sido un elemento distintivo en sus canciones.
+        
+                        A lo largo de su trayectoria, Los Piojos han explorado diversos géneros dentro del rock, fusionando elementos de blues, reggae y música folklórica argentina. Han cosechado éxitos y han logrado una gran base de seguidores en Argentina y otros países de habla hispana.
+        
+                        Además de su música, los miembros de Los Piojos han compartido sus experiencias personales a través de sus canciones, reflejando temas sociales, amorosos y de la vida cotidiana. Han creado un vínculo especial con su público, convirtiéndose en una de las bandas más queridas y respetadas de la escena musical argentina.
+        
+                        Aunque la banda se separó en 2009, su legado perdura en la memoria de sus seguidores y en la influencia que han tenido en la música rock en Argentina. Los Piojos dejaron un impacto duradero y continúan siendo una referencia para nuevas generaciones de músicos.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Patricio Rey Y Sus Redonditos De Ricota</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Patricio Rey Y Sus Redonditos De Ricota fue una banda de rock argentino formada en la década de 1980. Sus integrantes, entre ellos Carlos "Indio" Solari y Eduardo "Skay" Beilinson, dejaron una huella significativa en la historia de la música argentina.
+        
+                        La vida personal de los artistas de la banda ha sido parte esencial de su identidad artística. Tanto el Indio Solari como Skay Beilinson, principales compositores y vocalistas de la banda, han influido en la lírica y el estilo musical de Patricio Rey Y Sus Redonditos De Ricota.
+        
+                        El Indio Solari, reconocido por su carisma y letras poéticas, ha sido un referente para sus seguidores. Su voz y su presencia en el escenario le han dado un sello distintivo a la banda, mientras que sus letras han explorado temas sociales, políticos y existenciales.
+        
+                        Skay Beilinson, por su parte, ha dejado su marca con su talento como guitarrista y compositor. Sus melodías y riffs característicos han enriquecido la propuesta musical de la banda, creando atmósferas únicas en sus canciones.
+        
+                        Patricio Rey Y Sus Redonditos De Ricota se destacaron por su estilo irreverente y crítico, fusionando rock, punk y otros géneros musicales. Sus presentaciones en vivo se convirtieron en experiencias intensas y místicas para sus seguidores, generando una conexión especial entre la banda y su público.
+        
+                        A lo largo de su trayectoria, Patricio Rey Y Sus Redonditos De Ricota enfrentaron desafíos y controversias, pero dejaron un legado musical y cultural imborrable. Su música continúa siendo influyente y sigue siendo apreciada por generaciones de fanáticos.
+        
+                        Aunque la banda se disolvió en 2001, su impacto perdura en la historia del rock argentino. Patricio Rey Y Sus Redonditos De Ricota se han convertido en un símbolo de rebeldía y autenticidad, y su legado sigue vivo en la memoria de sus seguidores y en la música argentina.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Los Rodríguez</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Los Rodríguez fue una banda de rock formada en la década de 1990. Estuvo compuesta por Andrés Calamaro, Ariel Rot, Julián Infante y Germán Vilella.
+        
+                        Andrés Calamaro, reconocido por su talento como cantante y compositor, fue una de las figuras más destacadas en la historia de la banda. Su carisma y estilo único cautivaron a los fanáticos y lo convirtieron en una de las voces más influyentes del rock en español.
+        
+                        Ariel Rot, reconocido guitarrista y cantante, aportó su talento y experiencia musical a Los Rodríguez. Su habilidad en la guitarra y su carisma en el escenario lo convirtieron en una figura clave para el éxito de la banda.
+        
+                        Julián Infante, quien también fue guitarrista en la banda, contribuyó con su estilo y habilidad musical. Su talento en la guitarra eléctrica le dio a Los Rodríguez un sonido distintivo y energético.
+        
+                        Germán Vilella, baterista de la banda, proporcionó la base rítmica y la energía necesaria para el sonido característico de Los Rodríguez. Su precisión y estilo en la batería fueron fundamentales para la identidad musical del grupo.
+        
+                        Juntos, Los Rodríguez dejaron un legado duradero en la historia del rock en español. Su música, enérgica y llena de pasión, así como sus letras emotivas, conectaron con el público y los convirtieron en una de las bandas más queridas de su época.
+        
+                        Aunque la banda se separó en 1996, su música sigue siendo recordada y apreciada por los fanáticos hasta el día de hoy. Los Rodríguez dejaron una huella imborrable en la escena musical y continúan siendo una influencia para nuevas generaciones de artistas.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Pappo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Pappo, cuyo nombre real era Norberto Napolitano, fue un destacado músico argentino considerado uno de los pioneros del rock en su país. Nacido el 10 de marzo de 1950, Pappo dejó una huella imborrable en la escena musical a lo largo de su carrera.
+        
+                        Desde temprana edad, Pappo mostró un gran talento para la guitarra y se convirtió en un virtuoso del instrumento. Su estilo único y su pasión por el blues lo llevaron a ser reconocido como uno de los mejores guitarristas de Argentina.
+        
+                        A lo largo de su carrera, Pappo formó parte de bandas emblemáticas como Los Abuelos de la Nada y Riff, donde dejó su marca con su habilidad en la guitarra y su carisma en el escenario. Además de su trabajo con bandas, Pappo también se destacó como solista, lanzando varios álbumes aclamados.
+        
+                        Más allá de su carrera musical, la vida personal de Pappo estuvo marcada por su amor por las motocicletas y su espíritu libre. Era conocido por su pasión por viajar en moto y por su estilo de vida bohemio.
+        
+                        Desafortunadamente, Pappo falleció el 25 de febrero de 2005 en un trágico accidente de tránsito. Su muerte dejó un vacío en la música argentina, pero su legado perdura hasta el día de hoy. Pappo continúa siendo recordado como un icono del rock argentino y su influencia se extiende a nuevas generaciones de músicos.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Pink Floyd</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Pink Floyd fue una banda de rock británica formada en 1965. Estuvo compuesta por los talentosos músicos Roger Waters, David Gilmour, Richard Wright y Nick Mason.
+        
+                        Roger Waters, bajista y vocalista principal, fue uno de los pilares creativos de Pink Floyd. Su estilo lírico y su enfoque en temas como la alienación y la política le dieron a la banda una identidad única. Waters también se destacó como compositor y fue responsable de algunas de las canciones más icónicas de Pink Floyd.
+        
+                        David Gilmour, reconocido por su destreza en la guitarra y su voz distintiva, contribuyó en gran medida al sonido y éxito de Pink Floyd. Sus solos de guitarra emotivos y su estilo melódico fueron elementos clave en la música de la banda.
+        
+                        Richard Wright, tecladista y vocalista, aportó su talento musical y su creatividad a Pink Floyd. Sus arreglos de teclado y su habilidad para componer contribuyeron a la atmósfera única de la banda.
+        
+                        Nick Mason, baterista y uno de los miembros fundadores, proporcionó la base rítmica sólida y precisa que caracterizó el sonido de Pink Floyd. Su estilo de batería distintivo fue esencial para el éxito de la banda.
+        
+                        A lo largo de su carrera, Pink Floyd experimentó con diferentes estilos musicales y creó álbumes conceptualmente ambiciosos que se convirtieron en clásicos del rock. Su música y letras trascendieron el tiempo y continúan siendo apreciadas por millones de fanáticos en todo el mundo.
+        
+                        Aunque Pink Floyd se separó en 1995, su legado perdura y su influencia en la música sigue siendo innegable. La banda dejó un impacto duradero en la historia del rock y su música continúa inspirando a artistas y oyentes de todas las generaciones.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Queen</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Queen es una banda británica formada en 1970. Está compuesta por los legendarios músicos Freddie Mercury, Brian May, John Deacon y Roger Taylor.
+        
+                        Freddie Mercury, conocido por su carismática presencia en el escenario y su impresionante rango vocal, fue el vocalista principal de Queen. Su habilidad para conectar con el público y su energía desbordante lo convirtieron en una de las figuras más icónicas del rock. Fuera del escenario, Mercury era un individuo enigmático y apasionado por la música.
+        
+                        Brian May, guitarrista y miembro fundador de Queen, es reconocido por su distintivo sonido de guitarra y su talento como compositor. Además de su contribución musical, May también es un astrónomo aficionado y defensor de los derechos de los animales.
+        
+                        John Deacon, bajista de la banda, fue el encargado de proporcionar la sólida línea de bajo que se convirtió en un elemento característico del sonido de Queen. Aunque ha llevado una vida más privada después de la separación de la banda, su aporte musical sigue siendo fundamental en la identidad de Queen.
+        
+                        Roger Taylor, baterista y vocalista, complementó la música de Queen con su estilo rítmico y su distintiva voz. Además de su contribución en la batería, Taylor también es un talentoso compositor y ha lanzado varios álbumes en solitario a lo largo de su carrera.
+        
+                        Queen alcanzó el éxito internacional con sus innovadoras composiciones y su espectacular puesta en escena. La banda fue reconocida por fusionar diversos estilos musicales, desde el rock y el pop hasta el glam y el ópera. Su legado incluye éxitos atemporales como "Bohemian Rhapsody", "We Will Rock You" y "Don't Stop Me Now".
+        
+                        Aunque Freddie Mercury falleció en 1991, el espíritu de Queen sigue vivo. La banda continúa siendo venerada por su impacto en la música y su influencia perdura en artistas de todas las generaciones.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Red Hot Chili Peppers</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Red Hot Chili Peppers es una banda estadounidense formada en 1983. Está compuesta por los talentosos músicos Anthony Kiedis, Flea, John Frusciante y Chad Smith.
+        
+                        Anthony Kiedis, vocalista y miembro fundador de la banda, ha sido una figura emblemática en el mundo del rock. Su carisma en el escenario y su estilo de vida extravagante han sido elementos destacados de su vida personal. Kiedis ha luchado contra adicciones a lo largo de su carrera, pero también ha encontrado inspiración en su pasión por la música y su amor por la vida.
+        
+                        Flea, bajista y también miembro fundador, es conocido por su energía desbordante y su virtuosismo en el bajo. Fuera del escenario, Flea ha explorado su creatividad en diferentes formas de arte y ha sido un defensor apasionado de los derechos de los animales.
+        
+                        John Frusciante, guitarrista, ha tenido una relación intermitente con la banda. Durante su tiempo como miembro, aportó su estilo único y su creatividad a la música de Red Hot Chili Peppers. Frusciante también ha llevado una vida personal intensa y ha enfrentado desafíos personales a lo largo de los años.
+        
+                        Chad Smith, baterista, ha sido un elemento vital en el sonido de la banda. Su energía y precisión en la batería han sido el impulso rítmico detrás de muchos de los éxitos de Red Hot Chili Peppers. Smith también ha explorado otros proyectos musicales y ha colaborado con diversos artistas.
+        
+                        A lo largo de su carrera, Red Hot Chili Peppers ha fusionado el funk, el rock y el punk en su música. Han lanzado álbumes exitosos y han ganado múltiples premios, incluyendo varios premios Grammy. La banda ha dejado una huella duradera en la industria musical y ha influido en numerosos artistas con su estilo y actitud únicos.
+        
+                        Red Hot Chili Peppers ha atravesado momentos de cambio y superación personal, pero su pasión por la música y su legado perduran. Han demostrado una gran dedicación a su arte y han dejado una marca indeleble en la historia del rock.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Sumo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Sumo fue una banda de rock argentino formada en 1981. Estuvo liderada por Luca Prodan, un carismático cantante y compositor de origen italiano. La banda también incluía a Eduardo Skay Beilinson en la guitarra, Diego Arnedo en el bajo y Roberto Pettinato en el saxofón.
+        
+                        La historia personal de los miembros de Sumo estuvo marcada por la diversidad y los desafíos. Luca Prodan, conocido por su voz única y su estilo de vida extravagante, luchó contra adicciones y enfrentó varios problemas de salud. Su talento artístico dejó una profunda influencia en la música argentina.
+        
+                        Skay Beilinson, reconocido por su virtuosismo en la guitarra, ha llevado una carrera exitosa como solista después de la disolución de Sumo. Su enfoque musical y su vida personal han sido una parte importante de su identidad artística.
+        
+                        Diego Arnedo, talentoso bajista, ha colaborado con varios músicos después de la separación de Sumo. Su contribución al sonido de la banda y su habilidad musical han dejado una marca duradera en la escena del rock argentino.
+        
+                        Roberto Pettinato, conocido por su energía en el escenario y su estilo único en el saxofón, también ha seguido una carrera en solitario y ha incursionado en la televisión y la radio. Su participación en Sumo ayudó a definir su identidad musical y su presencia escénica.
+        
+                        A pesar de su corta existencia como banda, Sumo dejó un legado musical significativo en Argentina y más allá. Su fusión de estilos musicales, letras poéticas y actitud desafiante capturó la atención de una generación y se convirtió en un referente del rock en español.
+        
+                        Lamentablemente, la banda se disolvió en 1987 después del fallecimiento prematuro de Luca Prodan. Aunque su trayectoria fue breve, Sumo sigue siendo reconocida como una de las bandas más influyentes de la escena del rock argentino.
+        
+                        La historia personal y la música de Sumo continúan siendo apreciadas por los fanáticos y siguen inspirando a nuevas generaciones de artistas en la búsqueda de la autenticidad y la expresión artística.
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+                             
     </main>
 
-    <!-- Pié de página -->
     <!-- Pié de página -->
     <footer class="footer">
         <div class="redes">
@@ -107,6 +1011,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- SCRIPT DE AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 
 </body>
 </html>

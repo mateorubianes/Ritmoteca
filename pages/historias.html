@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ritmoteca es una página donde encontraras las historias tu música favorita y las biografías de los artistas de las canciones. Ademas ofrecemos una amplía variedad de playlists para que conozcas los géneros de los que hablamos aquí.">
+    <meta name="keywords"  content="MUSICA, RITMOTECA, ROCK, BLUES, REGGAE, CANTANTES, BANDAS, PLAYLISTS, BIOGRAFIAS, ARTISTAS, HISTORIAS, ROCK PROGRESIVO, PUNK , ROCK REGGAE, ACDC, LOS PIOJOS ">
     <!-- CSS de Boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS animate -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Favicon -->
@@ -14,22 +20,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400;800&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-    <title>Rtimoteca</title>
+    <title>Ritmoteca | Historias</title>
 </head>
 <body>
     <!-- Logo y menu  -->
     <header class="header">
         <div class="titulo">
-            <img src="../img/logo.png" alt="logo osito saxofon">
-            <h1>RITMOTECA</h1>
+            <img src="../img/logo.png" alt="logo" class="animate__animated animate__bounceInLeft">
+            <h1 class="animate__animated animate__zoomIn">RITMOTECA</h1>
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="../index.html">INICIO</a></li>                
-                <li><a href="historias.html">HISTORIAS</a></li>                
-                <li><a href="biografias.html">BIOGRAFÍAS</a></li>                
-                <li><a href="playlists.html">PLAYLISTS</a></li>                
-                <li><a href="contacto.html">CONTACTO</a></li>                
+                <li><a href="../index.html" class="animate__animated animate__backInDown">INICIO</a></li>                
+                <li><a href="historias.html" class="animate__animated animate__backInDown">HISTORIAS</a></li>                
+                <li><a href="biografias.html" class="animate__animated animate__backInDown">BIOGRAFÍAS</a></li>                
+                <li><a href="playlists.html" class="animate__animated animate__backInDown">PLAYLISTS</a></li>                
+                <li><a href="contacto.html" class="animate__animated animate__backInDown">CONTACTO</a></li>                
             </ul>
         </nav>
     </header>
@@ -40,27 +46,27 @@
             <h2>TODO LO QUE QUIERAS SABER SOBRE TUS CANCIONES FAVORITAS</h2>
             <h4>(click en el título para saber más)</h4>
             <ol>
-                <li><a href="#" data-toggle="modal" data-target="#modal1">"The Weight" de The Band</a> - cuenta la historia de un viajero que llega a Nazareth, Pensilvania, y es recibido por varios personajes que le piden que haga recados para ellos.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal2">"Piano Man" de Billy Joel</a> - basada en las experiencias del cantante como pianista en un bar de Los Ángeles, donde conoció a personas interesantes y aprendió de sus historias.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal3">"American Pie" de Don McLean</a> - una canción larga y enigmática que se refiere a eventos importantes de la historia de Estados Unidos, incluyendo la muerte de Buddy Holly en un accidente de avión.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal4">"Bohemian Rhapsody" de Queen</a> - una canción que cuenta una historia surrealista y oscura, que ha llevado a muchos a interpretarla de diferentes maneras.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal5">"Stan" de Eminem</a> - cuenta la historia de un fanático obsesionado con Eminem, quien comete un acto de violencia debido a su frustración por no recibir una respuesta del rapero.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal6">"Hotel California" de The Eagles</a> - cuenta la historia de un hombre que llega a un hotel aparentemente hermoso y lujoso, pero luego se da cuenta de que está atrapado allí y no puede escapar.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal7">"Killing in the Name" de Rage Against the Machine</a> - una canción que aborda el tema de la brutalidad policial y la injusticia racial, y que fue escrita después de un incidente violento en Los Ángeles en 1992.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal8">"Tears in Heaven" de Eric Clapton</a> - escrita después de la muerte de su hijo de cuatro años en un accidente, esta canción es una expresión de dolor y tristeza.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal9">"What's Going On" de Marvin Gaye</a> - una canción que trata sobre la guerra de Vietnam, la violencia en las calles y la falta de justicia social en Estados Unidos durante la década de 1970.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal10">"Losing My Religion" de R.E.M.</a> - a pesar del título, esta canción no trata sobre la religión, sino sobre la angustia y el dolor de una persona que está enamorada y que no puede expresar sus sentimientos.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal11">"Dancing in the Dark" de Bruce Springsteen</a> - escrita por Springsteen después de que su representante le pidiera que escribiera una canción más comercial, esta canción trata sobre la lucha del cantante por encontrar inspiración.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal12">"Imagine" de John Lennon</a> - una canción icónica que llama a la paz y la hermandad entre todos los seres humanos.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal13">"Sweet Child O' Mine" de Guns N' Roses</a> - escrita por el guitarrista Slash sobre su entonces novia, esta canción se convirtió en un gran éxito para la banda.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal14">"Hallelujah" de Leonard Cohen</a> - una canción con una letra poética y enigmática, que ha sido versionada por muchos artistas diferentes.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal15">"Landslide" de Fleetwood Mac</a> - escrita por la cantante Stevie Nicks, esta canción trata sobre el paso del tiempo y los cambios en la vida.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal16">"The A Team" de Ed Sheeran</a> - cuenta la historia de una mujer que lucha contra la adicción a las drogas y la prostitución.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal17">"Tangled Up in Blue" de Bob Dylan</a> - una canción compleja y enigmática que cuenta la historia de una relación fallida.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal18">"Purple Rain" de Prince</a> - una canción emocional y épica que se hizo famosa por la película del mismo nombre.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal19">"November Rain" de Guns N' Roses</a> - otra canción épica de esta banda, esta trata sobre el final de una relación y la lucha por seguir adelante.</li>
-                <li><a href="#" data-toggle="modal" data-target="#modal20">"Smells Like Teen Spirit" de Nirvana</a> - una canción que se convirtió en un himno de la juventud rebelde de los años 90.</li>
-            </ol>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal1">"The Weight" de The Band</a> - cuenta la historia de un viajero que llega a Nazareth, Pensilvania, y es recibido por varios personajes que le piden que haga recados para ellos.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal2">"Piano Man" de Billy Joel</a> - basada en las experiencias del cantante como pianista en un bar de Los Ángeles, donde conoció a personas interesantes y aprendió de sus historias.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal3">"American Pie" de Don McLean</a> - una canción larga y enigmática que se refiere a eventos importantes de la historia de Estados Unidos, incluyendo la muerte de Buddy Holly en un accidente de avión.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal4">"Bohemian Rhapsody" de Queen</a> - una canción que cuenta una historia surrealista y oscura, que ha llevado a muchos a interpretarla de diferentes maneras.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal5">"Stan" de Eminem</a> - cuenta la historia de un fanático obsesionado con Eminem, quien comete un acto de violencia debido a su frustración por no recibir una respuesta del rapero.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal6">"Hotel California" de The Eagles</a> - cuenta la historia de un hombre que llega a un hotel aparentemente hermoso y lujoso, pero luego se da cuenta de que está atrapado allí y no puede escapar.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal7">"Killing in the Name" de Rage Against the Machine</a> - una canción que aborda el tema de la brutalidad policial y la injusticia racial, y que fue escrita después de un incidente violento en Los Ángeles en 1992.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal8">"Tears in Heaven" de Eric Clapton</a> - escrita después de la muerte de su hijo de cuatro años en un accidente, esta canción es una expresión de dolor y tristeza.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal9">"What's Going On" de Marvin Gaye</a> - una canción que trata sobre la guerra de Vietnam, la violencia en las calles y la falta de justicia social en Estados Unidos durante la década de 1970.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal10">"Losing My Religion" de R.E.M.</a> - a pesar del título, esta canción no trata sobre la religión, sino sobre la angustia y el dolor de una persona que está enamorada y que no puede expresar sus sentimientos.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal11">"Dancing in the Dark" de Bruce Springsteen</a> - escrita por Springsteen después de que su representante le pidiera que escribiera una canción más comercial, esta canción trata sobre la lucha del cantante por encontrar inspiración.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal12">"Imagine" de John Lennon</a> - una canción icónica que llama a la paz y la hermandad entre todos los seres humanos.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal13">"Sweet Child O' Mine" de Guns N' Roses</a> - escrita por el guitarrista Slash sobre su entonces novia, esta canción se convirtió en un gran éxito para la banda.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal14">"Hallelujah" de Leonard Cohen</a> - una canción con una letra poética y enigmática, que ha sido versionada por muchos artistas diferentes.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal15">"Landslide" de Fleetwood Mac</a> - escrita por la cantante Stevie Nicks, esta canción trata sobre el paso del tiempo y los cambios en la vida.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal16">"The A Team" de Ed Sheeran</a> - cuenta la historia de una mujer que lucha contra la adicción a las drogas y la prostitución.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal17">"Tangled Up in Blue" de Bob Dylan</a> - una canción compleja y enigmática que cuenta la historia de una relación fallida.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal18">"Purple Rain" de Prince</a> - una canción emocional y épica que se hizo famosa por la película del mismo nombre.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal19">"November Rain" de Guns N' Roses</a> - otra canción épica de esta banda, esta trata sobre el final de una relación y la lucha por seguir adelante.</li>
+                <li data-aos="fade-up"><a href="#" data-toggle="modal" data-target="#modal20">"Smells Like Teen Spirit" de Nirvana</a> - una canción que se convirtió en un himno de la juventud rebelde de los años 90.</li>
+            </ol> data-aos="fade-up"
             <h4>Próximamente mas historias....</h4>
         </div>
 
@@ -465,6 +471,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- SCRIPT DE AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 
 </body>
 </html>
