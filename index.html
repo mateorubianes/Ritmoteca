@@ -23,15 +23,37 @@
     <title>Ritmoteca | Inicio</title>
 </head>
 <body>
-
-    
-
     <!-- Logo y menu  -->
     <header class="header">
+
         <div class="titulo">
-            <img src="img/logo.png" alt="logo" class="animate__animated animate__bounceInLeft">
-            <h1 class="animate__animated animate__zoomIn">RITMOTECA</h1>
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="animate__animated animate__bounceInLeft"></a>
+            <a href="index.html"><h1 class="animate__animated animate__zoomIn">RITMOTECA</h1></a>
+
+            <div class="pos-f-t hamburguesa">
+                <nav class="navbar navbar-dark ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+            </div>
         </div>
+
+        <!-- Menu hamburguesa -->
+        <div class="collapse hamburguesa" id="navbarToggleExternalContent">
+            <div>
+                <nav>
+                    <ul class="menuHamburguesa">
+                        <li><a href="index.html" class="animate__animated animate__backInDown">INICIO</a></li>                
+                        <li><a href="pages/historias.html" class="animate__animated animate__backInDown">HISTORIAS</a></li>                
+                        <li><a href="pages/biografias.html" class="animate__animated animate__backInDown">BIOGRAFÍAS</a></li>                
+                        <li><a href="pages/playlists.html" class="animate__animated animate__backInDown">PLAYLISTS</a></li>                
+                        <li><a href="pages/contacto.html" class="animate__animated animate__backInDown">CONTACTO</a></li>                
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
         <nav>
             <ul class="menu">
                 <li><a href="index.html" class="animate__animated animate__backInDown">INICIO</a></li>                
@@ -54,7 +76,7 @@
     
         <section>
             
-            <article class="articulo1" data-aos="fade-left">
+            <article class="articulo1" data-aos="fade-up">
                 <img src="img/generos.png" alt="generos">
                 <div>
                     <h2>TODO SOBRE ESTOS GÉNEROS</h2>
@@ -64,7 +86,7 @@
                 </div>
             </article>
 
-            <article class="articulo2" data-aos="fade-right">
+            <article class="articulo2" data-aos="fade-up">
                 <img src="img/playlist.png" alt="playlist">
                 <div>
                     <h2>NUESTRAS PLAYLISTS</h2>
@@ -74,7 +96,7 @@
                 </div>
             </article>
 
-            <article class="articulo3" data-aos="fade-left">
+            <article class="articulo3" data-aos="fade-up">
                 <img src="img/pinkFloyd.png" alt="generos">
                 <div>
                     <h2>HISTORIAS Y BIOGRAFÍAS</h2>

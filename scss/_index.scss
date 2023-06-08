@@ -15,9 +15,8 @@ body
 {
     display: flex;
     grid-area: titulo;
-    align-items: center;
-    justify-content: center;
     background-color: #db222a;
+    align-items: center;
     height: 100%;
 }
 .header img
@@ -32,14 +31,10 @@ body
     width: 9rem;
     text-align: center;
 }
-.header
+.titulo a
 {
-    display: grid;
-    grid-template-areas:
-    "titulo titulo"
-    "nav nav";
-    
     color: white;
+    text-decoration: none;
 }
 nav
 {
@@ -49,8 +44,8 @@ nav
 }
 .menu
 {
+    display: none;
     margin: 0;
-    display: flex;
     justify-content: space-around;
 }
 .menu li
@@ -76,12 +71,39 @@ nav
     font-weight: 400;
     font-size: 1rem;
 }
+.hamburguesa
+{
+    margin-left: auto;
+    grid-area: hamburguesa;
+}
+.menuHamburguesa
+{
+    @extend .menu;
+    display: flex;
+    flex-direction: column;
+}
+.header
+{
+    width: 100%;
+    // position: fixed;
+    align-items: center;
+    color: white;
+}
 
 /* MediaQuerie HEADER */
 @media (min-width: 900px)
 {
+    .menuHamburguesa
+    {
+        display: none;
+    }
+    .hamburguesa
+    {
+        display: none;
+    }
     .header
     {
+        display: grid;
         width: 100%;
         grid-template-areas:
         "titulo nav  nav nav";
@@ -102,13 +124,21 @@ nav
     {
         padding: 30px 0px;
     }
-
+    .menu
+    {
+        display: flex;
+    }
+    .titulo
+    {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /*IMGEN Y SLOGAN*/
 .slogan
 {
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% -150px;

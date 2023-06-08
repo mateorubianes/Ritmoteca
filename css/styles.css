@@ -14,9 +14,8 @@ body {
 .titulo {
   display: flex;
   grid-area: titulo;
-  align-items: center;
-  justify-content: center;
   background-color: #db222a;
+  align-items: center;
   height: 100%;
 }
 
@@ -31,10 +30,9 @@ body {
   text-align: center;
 }
 
-.header {
-  display: grid;
-  grid-template-areas: "titulo titulo" "nav nav";
+.titulo a {
   color: white;
+  text-decoration: none;
 }
 
 nav {
@@ -43,13 +41,13 @@ nav {
   list-style: none;
 }
 
-.menu {
+.menu, .menuHamburguesa {
+  display: none;
   margin: 0;
-  display: flex;
   justify-content: space-around;
 }
 
-.menu li {
+.menu li, .menuHamburguesa li {
   display: flex;
   border: 0px solid 0.3px #ebebeb;
   background-color: #2a2a2a;
@@ -61,20 +59,43 @@ nav {
   transition: all 0.8s;
 }
 
-.menu li:hover {
+.menu li:hover, .menuHamburguesa li:hover {
   background-color: #3d3d3d;
 }
 
-.menu a {
+.menu a, .menuHamburguesa a {
   color: white;
   text-decoration: none;
   font-weight: 400;
   font-size: 1rem;
 }
 
+.hamburguesa {
+  margin-left: auto;
+  grid-area: hamburguesa;
+}
+
+.menuHamburguesa {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  align-items: center;
+  color: white;
+}
+
 /* MediaQuerie HEADER */
 @media (min-width: 900px) {
+  .menuHamburguesa {
+    display: none;
+  }
+  .hamburguesa {
+    display: none;
+  }
   .header {
+    display: grid;
     width: 100%;
     grid-template-areas: "titulo nav  nav nav";
     font-size: large;
@@ -88,13 +109,20 @@ nav {
     width: 5rem;
     height: 5rem;
   }
-  .menu li {
+  .menu li, .menuHamburguesa li {
     padding: 30px 0px;
+  }
+  .menu, .menuHamburguesa {
+    display: flex;
+  }
+  .titulo {
+    align-items: center;
+    justify-content: center;
   }
 }
 /*IMGEN Y SLOGAN*/
 .slogan {
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% -150px;
